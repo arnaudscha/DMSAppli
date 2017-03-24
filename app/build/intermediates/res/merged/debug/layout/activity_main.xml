@@ -9,5 +9,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.cassandre.dansmavalise.MainActivity">
-
+<Button
+    android:id="@+id/activity_main_startTravel"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="@string/button_commencer_nouveau_voyage"/>
 </RelativeLayout>
