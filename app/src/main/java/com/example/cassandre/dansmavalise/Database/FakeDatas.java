@@ -11,6 +11,7 @@ import java.util.List;
 
 //A voir si l'on ne peux pas remplacer cette classe par une vrai base de données (e.g. : SQLLite).
 public class FakeDatas {
+
     public static ArrayList<ArrayList<String>> Villes;
     public static ArrayList<ArrayList<String>> Vetements;
     public static ArrayList<ArrayList<String>> PlacesToBe;
@@ -23,7 +24,7 @@ public class FakeDatas {
         IniPlacesToBe();
     }
 
-    public static void InitVetements(){
+    private static void InitVetements(){
         Vetements = new ArrayList<ArrayList<String>>();
         ArrayList<String> data = new ArrayList<String>();
         int i  = 0;
@@ -254,7 +255,7 @@ public class FakeDatas {
         //pluie = 0 ; ski = 1 ; soleil = 2 ; accessoiresP = 3 ; professionnelle = 4 ; froid  = 5 ;
     }
 
-    public static void InitCategories(){
+    private static void InitCategories(){
         Categories = new ArrayList<ArrayList<String>>();
         ArrayList<String> data = new ArrayList<String>();
 
@@ -290,7 +291,7 @@ public class FakeDatas {
         Categories.add(data);
     }
 
-    public static void InitVilles(){
+    private static void InitVilles(){
         Villes = new ArrayList<ArrayList<String>>();
         ArrayList<String> data = new ArrayList<String>();
         int i  = 0;
@@ -412,7 +413,7 @@ public class FakeDatas {
         Villes.add(data);
     }
 
-    public static void IniPlacesToBe(){
+    private static void IniPlacesToBe(){
         PlacesToBe = new ArrayList<ArrayList<String>>();
         ArrayList<String> data = new ArrayList<String>();
         int i  = 0;
