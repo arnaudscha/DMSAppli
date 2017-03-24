@@ -19,8 +19,8 @@ public class FakeDatas {
     public static void InitDatabase() {
         InitVetements();
         InitCategories();
-        Villes = new ArrayList<ArrayList<String>>();
-        PlacesToBe = new ArrayList<ArrayList<String>>();
+        InitVilles();
+        IniPlacesToBe();
     }
 
     public static void InitVetements(){
@@ -254,9 +254,10 @@ public class FakeDatas {
         //pluie = 0 ; ski = 1 ; soleil = 2 ; accessoiresP = 3 ; professionnelle = 4 ; froid  = 5 ;
     }
 
-    public static  void InitCategories(){
+    public static void InitCategories(){
         Categories = new ArrayList<ArrayList<String>>();
         ArrayList<String> data = new ArrayList<String>();
+
         int i  = 0;
         data.clear();
         data.add(0, String.valueOf(i)); i++;
@@ -286,6 +287,190 @@ public class FakeDatas {
         data.clear();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "froid");
+        Categories.add(data);
+    }
+
+    public static void InitVilles(){
+        Villes = new ArrayList<ArrayList<String>>();
+        ArrayList<String> data = new ArrayList<String>();
+        int i  = 0;
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Paris");
+        Villes.add(data);
+
+        data.clear();//0
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Lyon");
+        Villes.add(data);
+
+        data.clear();//1
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Lilles");
+        Villes.add(data);
+
+        data.clear();//2
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Bordeaux");
+        Villes.add(data);
+
+        data.clear();//3
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Biarritz");
+        Villes.add(data);
+
+        data.clear();//4
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Marseille");
+        Villes.add(data);
+
+        data.clear();//5
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Lourdes");
+        Villes.add(data);
+
+        data.clear();//6
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Saint Tropez");
+        Villes.add(data);
+
+
+        data.clear();//7
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Toulouse");
+        Villes.add(data);
+
+        data.clear();//8
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Porto Vecio");
+        Villes.add(data);
+
+        data.clear();//9
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Carcassone");
+        Villes.add(data);
+
+        data.clear();//10
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Deauville");
+        Villes.add(data);
+
+        data.clear();//11
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Nantes");
+        Villes.add(data);
+
+        data.clear();//12
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Val d'Isère");
+        Villes.add(data);
+
+        data.clear();//13
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Font Romeau");
+        Villes.add(data);
+
+        data.clear();//14
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Strasbourg");
+        Villes.add(data);
+
+        data.clear();//15
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Reims");
+        Villes.add(data);
+
+        data.clear();//16
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Bayonne");
+        Villes.add(data);
+
+        data.clear();//17
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Dunkerque");
+        Villes.add(data);
+
+        data.clear();//18
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Mont Saint Michel");
+        Villes.add(data);
+
+        data.clear();//19
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Ile de Ré");
+        Villes.add(data);
+
+        data.clear();//20
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Clermont Ferrant");
+        Villes.add(data);
+
+        data.clear();//21
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Guadeloupe");
+        Villes.add(data);
+    }
+
+    public static void IniPlacesToBe(){
+        PlacesToBe = new ArrayList<ArrayList<String>>();
+        ArrayList<String> data = new ArrayList<String>();
+        int i  = 0;
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Omelette de la mère Poulard");
+        data.add(2, "18");
+        data.add(3, "On vous recommande d'aller manger une délicieuse omelette.");
+        data.add(4, "décontracté");
+        Categories.add(data);
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Bastion");
+        data.add(2, "19");
+        data.add(3, "La boite de nuit à ne pas manquer.");
+        data.add(4, "soirée");
+        Categories.add(data);
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "La folie Douce");
+        data.add(2, "12");
+        data.add(3, "Entre deux pistes, un incontournable !");
+        data.add(4, "décontractée");
+        Categories.add(data);
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Casino");
+        data.add(2, "10");
+        data.add(3, "Pour boire juste un verre ou jouer au poker.");
+        data.add(4, "soirée");
+        Categories.add(data);
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "R2 Rooftop");
+        data.add(2, "4");
+        data.add(3, "Un petit coin de paradis.");
+        data.add(4, "soirée");
+        Categories.add(data);
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Grotte de Lourdes");
+        data.add(2, "5");
+        data.add(3, "LE lieu à visiter.");
+        data.add(4, "décontractée/Marche");
+        Categories.add(data);
+
+        data.clear();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Café de Flore");
+        data.add(2, "1");
+        data.add(3, "Une brasserie typique de Paris, située au coeur de Saint Germain.");
+        data.add(4, "décontractée");
         Categories.add(data);
     }
 }
