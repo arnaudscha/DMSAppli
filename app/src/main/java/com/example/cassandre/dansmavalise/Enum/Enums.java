@@ -44,7 +44,7 @@ public class Enums {
             case "professionnelle":
                 return Categorie.professionnelle;
             case "pluie":
-                return Categorie.froid;
+                return Categorie.pluie;
             default:
                 return Categorie.none;
         }
