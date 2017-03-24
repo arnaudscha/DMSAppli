@@ -17,13 +17,12 @@
         <activity android:name="com.example.cassandre.dansmavalise.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.example.cassandre.dansmavalise.StartActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

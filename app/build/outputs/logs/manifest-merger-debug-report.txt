@@ -35,25 +35,29 @@ MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Profiles\as
 	android:theme
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:10:9-40
 activity#com.example.cassandre.dansmavalise.MainActivity
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:11:9-17:20
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:11:9-15:20
 	android:name
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:11:19-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:12:13-16:29
+intent-filter#android.intent.action.MAIN
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:12:13-14:29
 action#android.intent.action.MAIN
 ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:13:17-69
 	android:name
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:13:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:15:17-77
-	android:name
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:15:27-74
 activity#com.example.cassandre.dansmavalise.StartActivity
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:16:9-24:20
+	android:screenOrientation
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:19:13-49
 	android:theme
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:19:19-83
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:18:13-66
 	android:name
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:18:19-48
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:17:13-42
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:20:13-23:29
+category#android.intent.category.LAUNCHER
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
