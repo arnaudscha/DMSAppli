@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_start.xml",
+        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\src\\main\\res\\layout\\activity_start.xml"
+    },
+    {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_view.xml"
     },
