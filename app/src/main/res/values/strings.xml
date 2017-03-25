@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">DansMaValise</string>
+    <string name="app_name">Dans Ma Valise</string>
 
     <!--Main Activity-->
     <string name="button_commencer_nouveau_voyage">Commencer un nouveau voyage</string>
+    <string name="NewTravelTitle">Nouveau Voyage</string>
+    <string name="new_travel_Destination">Destination</string>
+    <string name="new_travel_Sexe">Sexe</string>
+    <string name="new_travel_depart">Date de départ</string>
+    <string name="new_travel_arrivee">Date de fin</string>
+    <string name="button_valider">Valider le voyage</string>
+    <string name="DestinationNonValide">La destination n\'est pas connue.</string>
+    <string name="SexeNonValide">Le sexe choisi n\'est pas valide.</string>
+    <string name="DateDepartApresFin">La date de départ est apres la fin du voyage.</string>
+    <string name="confirmation_resume">RESUME</string>
+    <string name="confirmation_dateduvoyage">Dates du voyage</string>
+    <string name="confirmation_nombredejours">Nombre de jour(s)</string>
+    <string name="confirmation_votreSexe">Votre sexe</string>
+    <string name="confirmez">Acceptez</string>
+    <string name="Annuler">Annuler</string>
 </resources>

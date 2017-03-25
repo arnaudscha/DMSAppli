@@ -25,9 +25,6 @@ public class StartActivity extends Activity {
 
     private void initGraphicElements(){
         pb = (ProgressBar) findViewById(R.id.startActivity_progressBar);
-
-        //pb.getProgressDrawable().setColorFilter(
-        //        Color.BLUE, android.graphics.PorterDuff.Mode.SRC_IN);
     }
     private void load(){
         Thread welcomeThread = new Thread() {
