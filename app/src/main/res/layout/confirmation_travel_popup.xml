@@ -77,10 +77,15 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"/>
             </LinearLayout>
             <com.google.android.gms.maps.MapView
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/confirmation_travel_popup_mapView"
                 android:layout_margin="16dp"
-                android:id="@+id/confirmation_travel_popup_map"
                 android:layout_width="match_parent"
-                android:layout_height="175dp"/>
+                android:layout_height="175dp"
+                map:cameraZoom="13"
+                map:mapType="normal"
+                map:liteMode="true"
+                android:apiKey="AIzaSyChyvCs9Q3HBdcGqrp-9fSct75NkFthb5Y"/>
             <LinearLayout
                 android:gravity="center"
                 android:orientation="horizontal"

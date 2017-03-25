@@ -24,14 +24,22 @@ import android.widget.Toast;
 import com.example.cassandre.dansmavalise.Database.Service;
 import com.example.cassandre.dansmavalise.Enum.Enums;
 import com.example.cassandre.dansmavalise.Tools.Tools;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
-public class NewTravelActivity extends AppCompatActivity {
+public class NewTravelActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private AutoCompleteTextView destination;
     private Spinner sexe;
@@ -142,25 +150,50 @@ public class NewTravelActivity extends AppCompatActivity {
 
     private void showPopup(View anchorView) {
 
+        DateFormat dformat = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
         View popupView = getLayoutInflater().inflate(R.layout.confirmation_travel_popup, null);
 
         PopupWindow popupWindow = new PopupWindow(popupView,
                   LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
 
+
         TextView dates = (TextView) popupView.findViewById(R.id.confirmation_travel_popup_dates);
         TextView jours = (TextView) popupView.findViewById(R.id.confirmation_travel_popup_nbJours);
         TextView sexeTv = (TextView) popupView.findViewById(R.id.confirmation_travel_popup_sexe);
-        //MapView map = (MapView) findViewById(R.id.confirmation_travel_popup_mapView);
+        map = (MapView) findViewById(R.id.confirmation_travel_popup_mapView);
 
-        dates.setText(dd.toString() + " - " + df.toString());
-        int diff = (int)Math.abs(dd.getTime() - df.getTime()/ (24 * 60 * 60 * 1000));
+        GoogleMapOptions options = new GoogleMapOptions();
+        options.mapType(GoogleMap.MAP_TYPE_SATELLITE)
+                .compassEnabled(false)
+                .rotateGesturesEnabled(false)
+                .tiltGesturesEnabled(false);
+
+
+        String ddString = dformat.format(dd);
+        String dfString = dformat.format(df);
+        dates.setText(ddString + " - " + dfString);
+        int diff = (int)Math.abs((dd.getTime() - df.getTime())/ (24 * 60 * 60 * 1000));
         jours.setText(String.valueOf(diff));
         sexeTv.setText(sexe.getSelectedItem().toString());
+        LatLng position = Service.getSingleton()
+                .getLocationFromAddress(this, destination.getText().toString());
 
+        //map.getMapAsync(this);
         popupWindow.setFocusable(true);
         //popupWindow.setBackgroundDrawable(new ColorDrawable());
         popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,
                 0, 0);
 
+    }
+
+    private MapView map;
+    private LatLng position;
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        googleMap.addMarker(new MarkerOptions()
+                .position(position));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
+        map.onResume();
     }
 }

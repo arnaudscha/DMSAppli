@@ -44,12 +44,12 @@
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
-    },
-    {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -84,12 +84,12 @@
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
