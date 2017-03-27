@@ -9,6 +9,11 @@ public class Vetement {
     private String nom;
 
     public Vetement(int id, String nom){
+        this.id = id;
+        this.nom = nom;
+    }
 
+    public String getNom() {
+        return nom;
     }
 }

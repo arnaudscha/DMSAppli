@@ -84,12 +84,12 @@
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

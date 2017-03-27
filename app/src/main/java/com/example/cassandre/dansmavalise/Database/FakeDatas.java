@@ -450,7 +450,7 @@ public class FakeDatas {
         data.add(2, "18");
         data.add(3, "On vous recommande d'aller manger une délicieuse omelette.");
         data.add(4, "décontracté");
-        Categories.add(data);
+        PlacesToBe.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
@@ -458,7 +458,7 @@ public class FakeDatas {
         data.add(2, "19");
         data.add(3, "La boite de nuit à ne pas manquer.");
         data.add(4, "soirée");
-        Categories.add(data);
+        PlacesToBe.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
@@ -466,7 +466,7 @@ public class FakeDatas {
         data.add(2, "12");
         data.add(3, "Entre deux pistes, un incontournable !");
         data.add(4, "décontractée");
-        Categories.add(data);
+        PlacesToBe.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
@@ -474,7 +474,7 @@ public class FakeDatas {
         data.add(2, "10");
         data.add(3, "Pour boire juste un verre ou jouer au poker.");
         data.add(4, "soirée");
-        Categories.add(data);
+        PlacesToBe.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
@@ -482,7 +482,7 @@ public class FakeDatas {
         data.add(2, "4");
         data.add(3, "Un petit coin de paradis.");
         data.add(4, "soirée");
-        Categories.add(data);
+        PlacesToBe.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
@@ -490,14 +490,14 @@ public class FakeDatas {
         data.add(2, "5");
         data.add(3, "LE lieu à visiter.");
         data.add(4, "décontractée/Marche");
-        Categories.add(data);
+        PlacesToBe.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Café de Flore");
-        data.add(2, "1");
+        data.add(2, "0");
         data.add(3, "Une brasserie typique de Paris, située au coeur de Saint Germain.");
         data.add(4, "décontractée");
-        Categories.add(data);
+        PlacesToBe.add(data);
     }
 }

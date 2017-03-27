@@ -315,6 +315,7 @@
     <string name="DestinationNonValide">La destination n\'est pas connue.</string>
     <string name="NewTravelTitle">Nouveau Voyage</string>
     <string name="SexeNonValide">Le sexe choisi n\'est pas valide.</string>
+    <string name="VoyageCourantNull">Il n\'y a pas de voyage en cours !</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -369,11 +370,17 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="confirmation_categoriesVetements">Catégories de vètements</string>
     <string name="confirmation_dateduvoyage">Dates du voyage</string>
+    <string name="confirmation_destination">Destination</string>
+    <string name="confirmation_endroitsVisiter">Endroit à visiter</string>
+    <string name="confirmation_listeVetements">Liste de vêtements</string>
     <string name="confirmation_nombredejours">Nombre de jour(s)</string>
     <string name="confirmation_resume">RESUME</string>
+    <string name="confirmation_saison">Saison du voyage</string>
     <string name="confirmation_votreSexe">Votre sexe</string>
     <string name="confirmez">Acceptez</string>
+    <string name="jours">jours</string>
     <string name="new_travel_Destination">Destination</string>
     <string name="new_travel_Sexe">Sexe</string>
     <string name="new_travel_arrivee">Date de fin</string>

@@ -23,6 +23,10 @@ public class Ville {
         return id;
     }
 
+    public String getNom(){
+        return nom;
+    }
+
     public void setPlacesToBe(ArrayList<PlaceToBe> value){
         this.placesToBe = value;
     }
@@ -33,5 +37,23 @@ public class Ville {
 
     public ArrayList<Categorie> getCategories() {
         return categories;
+    }
+
+    public String getCategoriesString(){
+        String result  = "";
+
+        for(Categorie c : categories){
+            result += "- " + c.getNom().name() + "\n";
+        }
+        return  result;
+    }
+
+    public String getPlacesString(){
+        String result  = "";
+
+        for(PlaceToBe p : placesToBe){
+            result += "- " + p.getNom() + "\n";
+        }
+        return  result;
     }
 }

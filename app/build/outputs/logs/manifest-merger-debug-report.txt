@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml
@@ -14,16 +14,16 @@ ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\Andro
 		INJECTED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.android.gms:play-services-maps:9.6.1] D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.6.1\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:6:5-97
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:6:5-98
 	android:name
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:6:22-95
 application
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:8:5-38:19
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:8:5-44:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
@@ -52,25 +52,25 @@ ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\Andro
 	android:name
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:14:23-61
 activity#com.example.cassandre.dansmavalise.MainActivity
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:15:9-19:20
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:16:9-20:20
 	android:name
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:16:19-47
 intent-filter#android.intent.action.MAIN
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:16:13-18:29
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:17:13-19:29
 action#android.intent.action.MAIN
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:18:25-66
 activity#com.example.cassandre.dansmavalise.StartActivity
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:20:9-29:20
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:21:9-29:20
 	android:screenOrientation
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:23:13-49
 	android:theme
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:23:13-66
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:24:13-66
 	android:name
-		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:21:13-42
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:22:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:25:13-28:29
 category#android.intent.category.LAUNCHER
 ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
@@ -89,6 +89,12 @@ ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\Andro
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:36:17-46
 	android:name
 		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:35:17-63
+activity#com.example.cassandre.dansmavalise.ResumeActivity
+ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:38:9-43:20
+	android:parentActivityName
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:39:13-60
+	android:name
+		ADDED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml:38:19-49
 uses-sdk
 INJECTED from D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Profiles\aschaal\Desktop\ProjetGit\DansMaValise\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78

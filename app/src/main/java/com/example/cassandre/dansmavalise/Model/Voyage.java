@@ -38,7 +38,8 @@ public class Voyage {
         this.sexe = sexe;
         this.nbJours = (int)Math.abs((dateDepart.getTime() - dateFin.getTime())/ (24 * 60 * 60 * 1000));
         this.saison = Tools.getSaison(dateDepart);
-        this.vetements = Service.getSingleton().getVetements(destination.getCategories());
+        this.vetements = Service.getSingleton()
+                .getVetements(destination.getCategories(), sexe);
     }
 
     public String getDateDepart(){
@@ -51,5 +52,34 @@ public class Voyage {
 
     public Enums.Temps getSaison(){
         return saison;
+    }
+
+    public Ville getDestination(){
+        return destination;
+    }
+
+    public int getNbJours(){
+        return nbJours;
+    }
+
+    public Enums.Sexe getSexe() {
+        return sexe;
+    }
+
+    public String getCategoriesString() {
+        return destination.getCategoriesString();
+    }
+
+    public String getPlacesToBeString(){
+        return destination.getPlacesString();
+    }
+
+    public String getVetementsString() {
+        String result = "";
+        for (Vetement v : vetements){
+            result += "- " + v.getNom() + "\n";
+        }
+
+        return result;
     }
 }

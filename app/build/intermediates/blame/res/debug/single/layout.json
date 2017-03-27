@@ -44,6 +44,10 @@
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_resume.xml",
+        "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\src\\main\\res\\layout\\activity_resume.xml"
+    },
+    {
         "merged": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "D:\\Profiles\\aschaal\\Desktop\\ProjetGit\\DansMaValise\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_layout.xml"
     },

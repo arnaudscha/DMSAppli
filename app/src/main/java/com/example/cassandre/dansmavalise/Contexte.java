@@ -33,7 +33,13 @@ public class Contexte {
                 dateFin,
                 sexe
         );
+    }
 
+    public Voyage getVoyageCourant(){
+        return voyageCourant;
+    }
 
+    public void initVoyage() {
+        voyageCourant = null;
     }
 }

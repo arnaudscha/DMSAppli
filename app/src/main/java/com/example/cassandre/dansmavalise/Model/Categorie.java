@@ -18,4 +18,8 @@ public class Categorie {
     public int getId(){
         return id;
     }
+
+    public Enums.TypeCategorie getNom() {
+        return nom;
+    }
 }

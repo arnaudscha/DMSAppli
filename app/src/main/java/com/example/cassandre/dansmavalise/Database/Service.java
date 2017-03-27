@@ -92,7 +92,7 @@ public class Service {
             if(v.get(1).toLowerCase().equals(value.toLowerCase())){
 
                 result = new Ville(
-                        convertID(v.get(1)),
+                        convertID(v.get(0)),
                         v.get(1)
                 );
 
@@ -130,7 +130,7 @@ public class Service {
     private ArrayList<PlaceToBe> getPlacesToBe(Ville ville){
         ArrayList<PlaceToBe> result = new ArrayList<PlaceToBe>();
 
-        for(ArrayList<String> v : FakeDatas.Villes) {
+        for(ArrayList<String> v : FakeDatas.PlacesToBe) {
             if(convertID(v.get(2)) == ville.getId()){
                 result.add(new PlaceToBe(
                         convertID(v.get(0)),
@@ -138,18 +138,19 @@ public class Service {
                         ville,
                         v.get(3),
                         v.get(4)
-
                 ));
             }
         }
         return result;
     }
 
-    public ArrayList<Vetement> getVetements(int id){
+    public ArrayList<Vetement> getVetements(int id, Enums.Sexe sexe){
         ArrayList<Vetement> result = new ArrayList<Vetement>();
 
         for (ArrayList<String> v : FakeDatas.Vetements){
-            if(convertID(v.get(2)) == id) {
+            if(convertID(v.get(2)) == id &&
+                (Enums.ConvertSexe(v.get(3)).equals(sexe) ||
+                 Enums.ConvertSexe(v.get(3)).equals(Enums.Sexe.unisexe)) ) {
                 result.add(new Vetement(
                         convertID(v.get(0)),
                         v.get(1))
@@ -160,11 +161,11 @@ public class Service {
         return result;
     }
 
-    public ArrayList<Vetement> getVetements(ArrayList<Categorie> categories){
+    public ArrayList<Vetement> getVetements(ArrayList<Categorie> categories, Enums.Sexe sexe){
         ArrayList<Vetement> result = new ArrayList<Vetement>();
 
         for (Categorie c : categories){
-            result.addAll(getVetements(c.getId()));
+            result.addAll(getVetements(c.getId(), sexe));
         }
         return result;
     }

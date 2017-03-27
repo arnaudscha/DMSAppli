@@ -12,7 +12,7 @@ public class Enums {
     };
 
     public static Sexe ConvertSexe(String value){
-        switch (value){
+        switch (value.toLowerCase()){
             case "f":
             case "femme":
                 return Sexe.Femme;

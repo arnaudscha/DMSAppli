@@ -18,4 +18,8 @@ public class PlaceToBe {
         this.description = description;
         this.tenueRecommandee = tenueRecommandee;
     }
+
+    public String getNom() {
+        return nom;
+    }
 }
