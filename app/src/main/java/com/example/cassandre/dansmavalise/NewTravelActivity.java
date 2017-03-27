@@ -1,12 +1,8 @@
 package com.example.cassandre.dansmavalise;
 
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -14,9 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,29 +17,15 @@ import android.widget.Toast;
 import com.example.cassandre.dansmavalise.Database.Service;
 import com.example.cassandre.dansmavalise.Enum.Enums;
 import com.example.cassandre.dansmavalise.Tools.Tools;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMapOptions;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
-import java.util.Locale;
 
-public class NewTravelActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class NewTravelActivity extends AppCompatActivity {
 
     private AutoCompleteTextView destination;
     private Spinner sexe;
     private DatePicker dateDepart;
     private DatePicker dateFin;
     private Button valider;
-    private View container;
 
     private Date dd;
     private Date df;
@@ -65,7 +44,6 @@ public class NewTravelActivity extends AppCompatActivity implements OnMapReadyCa
         dateDepart = (DatePicker) findViewById(R.id.activity_new_travel_datedepart);
         dateFin = (DatePicker) findViewById(R.id.activity_new_travel_datedefin);
         valider = (Button) findViewById(R.id.activity_new_travel_valider);
-        container = (View) findViewById(R.id.activity_new_travel);
 
         String[] dests = Service.getSingleton()
                 .getArrayStringPays("")
@@ -139,7 +117,8 @@ public class NewTravelActivity extends AppCompatActivity implements OnMapReadyCa
             return;
         }
 
-        showPopup(container);
+        //Contexte.getInstance()
+        //showPopup(container);
     }
 
     private void hideKeyBoard(){
@@ -148,7 +127,7 @@ public class NewTravelActivity extends AppCompatActivity implements OnMapReadyCa
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    private void showPopup(View anchorView) {
+    /*private void showPopup(View anchorView) {
 
         DateFormat dformat = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
         View popupView = getLayoutInflater().inflate(R.layout.confirmation_travel_popup, null);
@@ -185,15 +164,5 @@ public class NewTravelActivity extends AppCompatActivity implements OnMapReadyCa
                 0, 0);
 
     }
-
-    private MapView map;
-    private LatLng position;
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        googleMap.addMarker(new MarkerOptions()
-                .position(position));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
-        map.onResume();
-    }
+*/
 }

@@ -21,7 +21,7 @@ public class Enums {
                 return Sexe.unisexe;
         }
     }
-    public enum Categorie{
+    public enum TypeCategorie{
         pluie,
         ski,
         soleil,
@@ -31,22 +31,22 @@ public class Enums {
         none
     }
 
-    public static Categorie ConvertCategorie(String value){
+    public static TypeCategorie ConvertCategorie(String value){
         switch (value){
             case "froid":
-                return Categorie.froid;
+                return TypeCategorie.froid;
             case "accessoiresPrincipaux":
-                return Categorie.principal;
+                return TypeCategorie.principal;
             case "ski":
-                return Categorie.ski;
+                return TypeCategorie.ski;
             case "soleil":
-                return Categorie.soleil;
+                return TypeCategorie.soleil;
             case "professionnelle":
-                return Categorie.professionnelle;
+                return TypeCategorie.professionnelle;
             case "pluie":
-                return Categorie.pluie;
+                return TypeCategorie.pluie;
             default:
-                return Categorie.none;
+                return TypeCategorie.none;
         }
     }
     public enum Temps{

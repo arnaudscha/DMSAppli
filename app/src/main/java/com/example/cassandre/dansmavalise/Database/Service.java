@@ -4,6 +4,8 @@ import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 
+import com.example.cassandre.dansmavalise.Model.PlaceToBe;
+import com.example.cassandre.dansmavalise.Model.Ville;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.io.IOException;
@@ -77,5 +79,48 @@ public class Service {
         }
 
         return p1;
+    }
+
+    public Ville getVille(String value){
+        Ville result = null;
+
+        for(ArrayList<String> v : FakeDatas.Villes){
+            if(v.get(1).toLowerCase().equals(value.toLowerCase())){
+
+                result = new Ville(
+                        convertID(v.get(1)),
+                        v.get(1)
+                );
+
+                result.setPlacesToBe(getPlacesToBe(result));
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    private ArrayList<PlaceToBe> getPlacesToBe(Ville ville){
+        ArrayList<PlaceToBe> result = new ArrayList<PlaceToBe>();
+
+        for(ArrayList<String> v : FakeDatas.Villes) {
+            if(convertID(v.get(2)) == ville.getId()){
+                result.add(new PlaceToBe(
+                        convertID(v.get(0)),
+                        v.get(1),
+                        ville,
+                        v.get(3),
+                        v.get(4)
+
+                ));
+            }
+        }
+        return result;
+    }
+
+    public int convertID(String value){
+        int result = -1;
+        result  = Integer.decode(value);
+        return result;
     }
 }
