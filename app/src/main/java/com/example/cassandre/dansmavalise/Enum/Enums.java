@@ -14,8 +14,10 @@ public class Enums {
     public static Sexe ConvertSexe(String value){
         switch (value){
             case "f":
+            case "femme":
                 return Sexe.Femme;
             case "h":
+            case "homme":
                 return Sexe.Homme;
             default:
                 return Sexe.unisexe;

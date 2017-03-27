@@ -117,7 +117,14 @@ public class NewTravelActivity extends AppCompatActivity {
             return;
         }
 
-        //Contexte.getInstance()
+        Contexte.getInstance().creerNouveauVoyage(
+                destination.getText().toString(),
+                dd,
+                df,
+                Enums.ConvertSexe(sexe.getSelectedItem().toString())
+        );
+
+
         //showPopup(container);
     }
 

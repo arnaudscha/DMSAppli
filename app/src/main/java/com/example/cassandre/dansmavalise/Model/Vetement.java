@@ -7,4 +7,8 @@ package com.example.cassandre.dansmavalise.Model;
 public class Vetement {
     private int id;
     private String nom;
+
+    public Vetement(int id, String nom){
+
+    }
 }

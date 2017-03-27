@@ -3,8 +3,12 @@ package com.example.cassandre.dansmavalise.Database;
 import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
+import android.widget.ArrayAdapter;
 
+import com.example.cassandre.dansmavalise.Enum.Enums;
+import com.example.cassandre.dansmavalise.Model.Categorie;
 import com.example.cassandre.dansmavalise.Model.PlaceToBe;
+import com.example.cassandre.dansmavalise.Model.Vetement;
 import com.example.cassandre.dansmavalise.Model.Ville;
 import com.google.android.gms.maps.model.LatLng;
 
@@ -93,10 +97,33 @@ public class Service {
                 );
 
                 result.setPlacesToBe(getPlacesToBe(result));
+                ArrayList<Categorie> categories = new ArrayList<Categorie>();
+                for (String s : v.get(2).split("-")){
+                    int i = convertID(s);
+                    if(i != -1){
+                        categories.add(getCategories(i));
+                    }
+                }
+                result.setCategories(categories);
                 break;
             }
         }
 
+        return result;
+    }
+
+    private Categorie getCategories(int id){
+        Categorie result = null;
+
+        for(ArrayList<String> c : FakeDatas.Categories){
+            if(id == convertID(c.get(0))){
+                result = new Categorie(
+                        convertID(c.get(0)),
+                        c.get(1)
+                );
+                break;
+            }
+        }
         return result;
     }
 
@@ -114,6 +141,30 @@ public class Service {
 
                 ));
             }
+        }
+        return result;
+    }
+
+    public ArrayList<Vetement> getVetements(int id){
+        ArrayList<Vetement> result = new ArrayList<Vetement>();
+
+        for (ArrayList<String> v : FakeDatas.Vetements){
+            if(convertID(v.get(2)) == id) {
+                result.add(new Vetement(
+                        convertID(v.get(0)),
+                        v.get(1))
+                );
+            }
+        }
+
+        return result;
+    }
+
+    public ArrayList<Vetement> getVetements(ArrayList<Categorie> categories){
+        ArrayList<Vetement> result = new ArrayList<Vetement>();
+
+        for (Categorie c : categories){
+            result.addAll(getVetements(c.getId()));
         }
         return result;
     }

@@ -1,9 +1,9 @@
 package com.example.cassandre.dansmavalise;
 
+import com.example.cassandre.dansmavalise.Database.Service;
 import com.example.cassandre.dansmavalise.Enum.Enums;
 import com.example.cassandre.dansmavalise.Model.Voyage;
-
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * Created by aschaal on 27/03/2017.
@@ -27,8 +27,13 @@ public class Contexte {
     private Voyage voyageCourant;
 
     public void creerNouveauVoyage(String destination, Date dateDepart, Date dateFin, Enums.Sexe sexe){
+        voyageCourant = new Voyage(
+                Service.getSingleton().getVille(destination),
+                dateDepart,
+                dateFin,
+                sexe
+        );
 
-        
-        voyageCourant = new Voyage();
+
     }
 }

@@ -299,117 +299,143 @@ public class FakeDatas {
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Paris");
+        data.add(2, "3");
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Lyon");
+        data.add(2, "3");
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Lilles");
+        data.add(2, "3-5");
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Bordeaux");
+        data.add(2, "3-2-4");
+        //data.add(2, "3-2/4");
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Biarritz");
+        data.add(2, "3-2-4");
+        //data.add(2, "3-2/4");
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Marseille");
+        data.add(2, "3-2-4");
+        // data.add(2, "3-2/4");
         Villes.add(data);
 
         data= new ArrayList<String>();//5
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Lourdes");
+        data.add(2, "3");
         Villes.add(data);
 
         data = new ArrayList<String>();//6
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Saint Tropez");
+        data.add(2, "3-2");
         Villes.add(data);
 
 
         data = new ArrayList<String>();//7
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Toulouse");
+        data.add(2, "3-2");
         Villes.add(data);
 
         data = new ArrayList<String>();//8
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Porto Vecio");
+        data.add(2, "3-2");
         Villes.add(data);
 
         data = new ArrayList<String>();//9
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Carcassone");
+        data.add(2, "3-2");
         Villes.add(data);
 
         data = new ArrayList<String>();//10
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Deauville");
+        data.add(2, "3-2");
         Villes.add(data);
 
         data = new ArrayList<String>();//11
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Nantes");
+        data.add(2, "3");
         Villes.add(data);
 
         data = new ArrayList<String>();//12
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Val d'Isère");
+        data.add(2, "1");
         Villes.add(data);
 
         data = new ArrayList<String>();//13
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Font Romeau");
+        data.add(2, "1");
         Villes.add(data);
 
         data = new ArrayList<String>();//14
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Strasbourg");
+        data.add(2, "3-5");
         Villes.add(data);
 
         data = new ArrayList<String>();//15
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Reims");
+        data.add(2, "3-5");
         Villes.add(data);
 
         data = new ArrayList<String>();//16
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Bayonne");
+        data.add(2, "3-2");
         Villes.add(data);
 
         data = new ArrayList<String>();//17
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Dunkerque");
+        data.add(2, "3-5");
         Villes.add(data);
 
         data = new ArrayList<String>();//18
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Mont Saint Michel");
+        data.add(2, "3-0");
         Villes.add(data);
 
         data = new ArrayList<String>();//19
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Ile de Ré");
+        data.add(2, "3-5");
         Villes.add(data);
 
         data = new ArrayList<String>();//20
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Clermont Ferrant");
+        data.add(2, "3-5");
         Villes.add(data);
 
         data = new ArrayList<String>();//21
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Guadeloupe");
+        data.add(2, "3-2");
         Villes.add(data);
     }
 
