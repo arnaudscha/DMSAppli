@@ -12,11 +12,13 @@ public class Ville {
     private String nom;
     private ArrayList<PlaceToBe> placesToBe;
     private ArrayList<Categorie> categories;
+    private int drawable;
 
-    public Ville(int id, String nom){
+    public Ville(int id, String nom, int drawable){
         this.placesToBe = new ArrayList<PlaceToBe>();
         this.id = id;
         this.nom = nom;
+        this.drawable = drawable;
     }
 
     public int getId(){
@@ -55,5 +57,9 @@ public class Ville {
             result += "- " + p.getNom() + "\n";
         }
         return  result;
+    }
+
+    public int getDrawable(){
+        return drawable;
     }
 }

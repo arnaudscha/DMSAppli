@@ -35,7 +35,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ResumeActivity"
+        <activity
+            android:name=".ResumeActivity"
             android:parentActivityName=".NewTravelActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

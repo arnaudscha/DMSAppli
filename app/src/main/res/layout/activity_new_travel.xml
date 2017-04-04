@@ -5,70 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cassandre.dansmavalise.NewTravelActivity">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp">
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
+            android:layout_margin="5dp"
             android:text="@string/new_travel_Destination"
-            android:textAppearance="@style/FormulaireTitre"
-            android:layout_margin="5dp"/>
+            android:textAppearance="@style/FormulaireTitre" />
+
         <AutoCompleteTextView
             android:id="@+id/activity_new_travel_destination"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="@string/new_travel_Destination"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:hint="@string/new_travel_Destination" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
+            android:layout_margin="5dp"
             android:text="@string/new_travel_Sexe"
-            android:textAppearance="@style/FormulaireTitre"
-            android:layout_margin="5dp"/>
+            android:textAppearance="@style/FormulaireTitre" />
+
         <Spinner
             android:id="@+id/activity_new_travel_sexe"
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
+            android:layout_margin="5dp"
             android:text="@string/new_travel_depart"
-            android:textAppearance="@style/FormulaireTitre"
-            android:layout_margin="5dp"/>
+            android:textAppearance="@style/FormulaireTitre" />
+
         <DatePicker
             android:id="@+id/activity_new_travel_datedepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:datePickerMode="spinner"
             android:calendarViewShown="false"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:datePickerMode="spinner" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
+            android:layout_margin="5dp"
             android:text="@string/new_travel_arrivee"
-            android:textAppearance="@style/FormulaireTitre"
-            android:layout_margin="5dp"/>
+            android:textAppearance="@style/FormulaireTitre" />
+
         <DatePicker
             android:id="@+id/activity_new_travel_datedefin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:datePickerMode="spinner"
             android:calendarViewShown="false"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:datePickerMode="spinner" />
+
         <Button
             android:id="@+id/activity_new_travel_valider"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/button_valider"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"/>
+            android:layout_marginRight="16dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/button_valider"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

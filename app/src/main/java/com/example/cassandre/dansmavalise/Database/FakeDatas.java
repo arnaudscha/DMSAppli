@@ -1,5 +1,7 @@
 package com.example.cassandre.dansmavalise.Database;
 
+import com.example.cassandre.dansmavalise.R;
+
 import java.util.ArrayList;
 
 /**
@@ -13,12 +15,14 @@ public class FakeDatas {
     public static ArrayList<ArrayList<String>> Vetements;
     public static ArrayList<ArrayList<String>> PlacesToBe;
     public static ArrayList<ArrayList<String>> Categories;
+    public static ArrayList<ArrayList<String>> Accounts;
 
     public static void InitDatabase() {
         InitVetements();
         InitCategories();
         InitVilles();
         InitPlacesToBe();
+        InitAccounts();
     }
 
     private static void InitVetements(){
@@ -297,24 +301,28 @@ public class FakeDatas {
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Paris");
         data.add(2, "3");
+        data.add(3, String.valueOf(R.drawable.paris_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Lyon");
         data.add(2, "3");
+        data.add(3, String.valueOf(R.drawable.lyon_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Lilles");
         data.add(2, "3-5");
+        data.add(3, String.valueOf(R.drawable.lilles_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Bordeaux");
         data.add(2, "3-2-4");
+        data.add(3, String.valueOf(R.drawable.bordeaux_thumb));
         //data.add(2, "3-2/4");
         Villes.add(data);
 
@@ -322,6 +330,7 @@ public class FakeDatas {
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Biarritz");
         data.add(2, "3-2-4");
+        data.add(3, String.valueOf(R.drawable.biarrits_thumb));
         //data.add(2, "3-2/4");
         Villes.add(data);
 
@@ -329,6 +338,7 @@ public class FakeDatas {
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Marseille");
         data.add(2, "3-2-4");
+        data.add(3, String.valueOf(R.drawable.marseille_thumb));
         // data.add(2, "3-2/4");
         Villes.add(data);
 
@@ -342,6 +352,7 @@ public class FakeDatas {
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Saint Tropez");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.sainttropez_thumb));
         Villes.add(data);
 
 
@@ -349,90 +360,105 @@ public class FakeDatas {
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Toulouse");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.toulouse_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//8
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Porto Vecio");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//9
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Carcassone");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//10
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Deauville");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//11
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Nantes");
         data.add(2, "3");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//12
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Val d'Isère");
         data.add(2, "1");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//13
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Font Romeau");
         data.add(2, "1");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//14
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Strasbourg");
         data.add(2, "3-5");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//15
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Reims");
         data.add(2, "3-5");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//16
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Bayonne");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//17
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Dunkerque");
         data.add(2, "3-5");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//18
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Mont Saint Michel");
         data.add(2, "3-0");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//19
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Ile de Ré");
         data.add(2, "3-5");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//20
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Clermont Ferrant");
         data.add(2, "3-5");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
 
         data = new ArrayList<String>();//21
         data.add(0, String.valueOf(i)); i++;
         data.add(1, "Guadeloupe");
         data.add(2, "3-2");
+        data.add(3, String.valueOf(R.drawable.noimage_thumb));
         Villes.add(data);
     }
 
@@ -496,5 +522,20 @@ public class FakeDatas {
         data.add(3, "Une brasserie typique de Paris, située au coeur de Saint Germain.");
         data.add(4, "décontractée");
         PlacesToBe.add(data);
+    }
+
+    private static void InitAccounts(){
+        Accounts = new ArrayList<ArrayList<String>>();
+        ArrayList<String> data = new ArrayList<String>();
+        int i  = 0;
+
+        data = new ArrayList<String>();
+        data.add(0, String.valueOf(i)); i++;
+        data.add(1, "Ursula");
+        data.add(2, "f");
+        data.add(3, "78");
+        data.add(4, "ursulla3632@ulla.com");
+        data.add(5, "Vide");
+        Accounts.add(data);
     }
 }

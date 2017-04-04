@@ -2,6 +2,7 @@ package com.example.cassandre.dansmavalise;
 
 import com.example.cassandre.dansmavalise.Database.Service;
 import com.example.cassandre.dansmavalise.Enum.Enums;
+import com.example.cassandre.dansmavalise.Model.Account;
 import com.example.cassandre.dansmavalise.Model.Voyage;
 import java.util.Date;
 
@@ -14,7 +15,7 @@ public class Contexte {
     private static Contexte instance;
 
     private Contexte(){
-
+        accountCourant = Service.getSingleton().getAccount("Ursula");
     }
 
     public static Contexte getInstance(){
@@ -25,6 +26,7 @@ public class Contexte {
     }
 
     private Voyage voyageCourant;
+    private Account accountCourant;
 
     public void creerNouveauVoyage(String destination, Date dateDepart, Date dateFin, Enums.Sexe sexe){
         voyageCourant = new Voyage(
@@ -41,5 +43,14 @@ public class Contexte {
 
     public void initVoyage() {
         voyageCourant = null;
+    }
+
+    public Account getAccountCourant() { return accountCourant; }
+
+    public void ajouterVoyageCourant() {
+        accountCourant.ajouterVoyage(voyageCourant);
+
+        //TODO : Dans le cas d'un appel serveur gerer l'initialisation du voyage courant dans le callback.
+        initVoyage();
     }
 }

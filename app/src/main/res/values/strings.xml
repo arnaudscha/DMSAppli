@@ -25,4 +25,7 @@
     <string name="confirmation_destination">Destination</string>
     <string name="VoyageCourantNull">Il n\'y a pas de voyage en cours !</string>
     <string name="jours">jours</string>
+    <string name="valider">Valider</string>
+    <string name="bonjour">Bonjour</string>
+    <string name="pasdevoyage">Pas de voyage !</string>
 </resources>

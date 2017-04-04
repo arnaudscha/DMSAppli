@@ -2,6 +2,8 @@ package com.example.cassandre.dansmavalise;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +19,8 @@ public class ResumeActivity extends AppCompatActivity {
     private TextView categories;
     private TextView listeVetements;
     private TextView placesToBe;
-
+    private Button valider;
+    private Button annuler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,8 @@ public class ResumeActivity extends AppCompatActivity {
         categories = (TextView) findViewById(R.id.activity_resume_categorieVetements);
         listeVetements = (TextView) findViewById(R.id.activity_resume_listeVetements);
         placesToBe = (TextView) findViewById(R.id.activity_resume_endroitsAVisiter);
+        valider = (Button) findViewById(R.id.activity_resume_valider);
+        annuler = (Button) findViewById(R.id.activity_resume_annuler);
 
         if (Contexte.getInstance().getVoyageCourant() == null){
             Toast.makeText(this, getString(R.string.VoyageCourantNull), Toast.LENGTH_LONG)
@@ -50,6 +55,25 @@ public class ResumeActivity extends AppCompatActivity {
         categories.setText(Contexte.getInstance().getVoyageCourant().getCategoriesString());
         listeVetements.setText(Contexte.getInstance().getVoyageCourant().getVetementsString());
         placesToBe.setText(Contexte.getInstance().getVoyageCourant().getPlacesToBeString());
+
+        valider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onValider();
+            }
+        });
+        annuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+    }
+
+    private void onValider(){
+        Contexte.getInstance().ajouterVoyageCourant();
+        onBackPressed();
     }
 
     @Override

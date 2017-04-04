@@ -6,10 +6,12 @@ import android.location.Geocoder;
 import android.widget.ArrayAdapter;
 
 import com.example.cassandre.dansmavalise.Enum.Enums;
+import com.example.cassandre.dansmavalise.Model.Account;
 import com.example.cassandre.dansmavalise.Model.Categorie;
 import com.example.cassandre.dansmavalise.Model.PlaceToBe;
 import com.example.cassandre.dansmavalise.Model.Vetement;
 import com.example.cassandre.dansmavalise.Model.Ville;
+import com.example.cassandre.dansmavalise.Model.Voyage;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.io.IOException;
@@ -93,7 +95,8 @@ public class Service {
 
                 result = new Ville(
                         convertID(v.get(0)),
-                        v.get(1)
+                        v.get(1),
+                        convertID(v.get(3))
                 );
 
                 result.setPlacesToBe(getPlacesToBe(result));
@@ -167,6 +170,30 @@ public class Service {
         for (Categorie c : categories){
             result.addAll(getVetements(c.getId(), sexe));
         }
+        return result;
+    }
+
+    public Account getAccount(String name){
+        Account result = null;
+
+        for(ArrayList<String> a : FakeDatas.Accounts){
+            if(a.get(1).equals(name)){
+                //int id, String nom, Enums.Sexe sexe, int age, String adresse, ArrayList<Voyage> voyages
+                result = new Account(
+                        convertID(a.get(0)),
+                        a.get(1),
+                        Enums.ConvertSexe(a.get(2)),
+                        convertID(a.get(3)),
+                        a.get(4),
+                        new ArrayList<Voyage>()
+                );
+            }
+        }
+
+        if(result == null){
+            result = Account.getInstanceVide();
+        }
+
         return result;
     }
 

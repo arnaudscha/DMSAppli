@@ -5,112 +5,156 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cassandre.dansmavalise.ResumeActivity">
+
     <LinearLayout
-        android:padding="30dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/confirmation_resume"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_destination"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_destination"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_destination"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_dateduvoyage"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_datevoyage"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_dateduvoyage"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_nombredejours"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_nbjours"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_nombredejours"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_votreSexe"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_sexe"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_votreSexe"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_saison"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_saison"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_saison"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_categoriesVetements"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_categorieVetements"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_categoriesVetements"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_listeVetements"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_listeVetements"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_listeVetements"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/confirmation_endroitsVisiter"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <TextView
             android:id="@+id/activity_resume_endroitsAVisiter"
-            android:paddingLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/confirmation_endroitsVisiter"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
-    </LinearLayout>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_resume_annuler"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="@string/Annuler"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <Button
+                android:id="@+id/activity_resume_valider"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="@string/valider"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
