@@ -1,9 +1,6 @@
 package com.example.cassandre.dansmavalise.Database;
 
-import android.util.Pair;
-
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by aschaal on 24/03/2017.
@@ -21,7 +18,7 @@ public class FakeDatas {
         InitVetements();
         InitCategories();
         InitVilles();
-        IniPlacesToBe();
+        InitPlacesToBe();
     }
 
     private static void InitVetements(){
@@ -439,7 +436,7 @@ public class FakeDatas {
         Villes.add(data);
     }
 
-    private static void IniPlacesToBe(){
+    private static void InitPlacesToBe(){
         PlacesToBe = new ArrayList<ArrayList<String>>();
         ArrayList<String> data = new ArrayList<String>();
         int i  = 0;
